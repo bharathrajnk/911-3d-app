@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-ink text-white antialiased overflow-x-hidden;
+    font-family: 'Inter', sans-serif;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  .tracking-luxe {
+    letter-spacing: 0.22em;
+  }
+}
+
+/* Hide scrollbar for smooth visual */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
